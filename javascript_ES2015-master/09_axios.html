@@ -1,0 +1,24 @@
+<!-- 아작스 사용을 위한 axios 이용-->
+<!-- 겟방식으로 보내기-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- <script>
+  axios.get('https://www.zerocho.com/api/get').then((result) => {
+      console.log(result);
+      console.log(result.data); // {}
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+</script> -->
+
+<script>
+    (async () => {
+        try{
+            const result = await axios.get('https://www.zerocho.com/api/get');
+            console.log(result);
+            console.log(result.data); // {}
+        }catch(error){
+            console.error(error);
+        }
+    })();
+  </script>
